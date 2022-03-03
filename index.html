@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tea Universe</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <link rel="shortcut icon" type="image/jpg" href="images/tea_icon.png"/>
+    <script src="js/browserSupport.js"></script>
+  </head>
+  <body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#hero"><img src="images/tea_icon.png" alt="Tea Icon"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#catalog">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#order">Order</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="hero">
+      <div>
+        <p class="hero_title text-center">Tea Universe</p>
+        <p class="text-center quote">"Tea time is a chance to slow down, pull back and appreciate our surroundings" - Letitia Baldrige</p>
+      </div>
+    </div>
+
+    <div id="home">
+      <div class="flex-container-home home-info">
+        <div class="home-text">
+          <p class="font title-size">Welcome!</p>
+          <p>
+            Our teashop/cafe was created in order to connect all tea lovers in one place. It is a place where a lot of different people can connect and talk while
+            drinking their favorite cup of tea. Unfortunately, do to the COVID-19 sutuation, Tea Universe can't let customers come into the shop. In order to give
+            our customers the change to drink our tea even during the pandemic, we have decided to create a webpage where the customers can order their favorite
+            tea to their address. We have 3 different types of tea: Green, Fruit and Herbal. Each type of tea has specific flavors made to compliment the type of
+            tea. Green tea flavors are: sencha, matcha, and sakura cherry tree. Fruit tea flavors are: Rosehip, Strawberry and Vanilla, and Caramel Apple. Herbal
+            tea flavors are: Chamomille, Mint, and Hibiscus. Each tea flavor has their own special message that can come with it. Each flavor has 2 special famous
+            life quotes that come from famous sources. After selecting the type of tea, the flavor of that tea and the quote to go with it, the order will be sent 
+            to us after the user submits the form that is located at the bottom of the page.
+          </p>
+        </div>
+        <div class="home-image-div">
+          <img class="home-image" src="images/yellow_tea_teapot.jpg" alt="Chamomille tea from a teapot">
+        </div>
+      </div>
+    </div>
+
+    <div id="quote">
+      <div>
+        <p class="quote-text">
+          "There are few hours in life more aggreeable than the hour dedicated to the ceremony known as the afternoon tea." - Henry James
+        </p>
+      </div>
+    </div>
+
+    <div id="catalog">
+      <p class="font title-size catalog-title">
+        What we offer:
+      </p>
+      <div class="flex-container-catalog">
+        <div class="green">
+          <div>
+            <img class="tea-pics rounded-circle" src="images/green.jpg" alt="Green tea">
+          </div>
+          <div>
+            <p class="font tea-names">
+              Green Tea
+            </p>
+            <ul>
+              <li>Sencha</li>
+              <li>Matcha</li>
+              <li>Sakura Cherry Tree</li>
+            </ul>
+          </div>
+        </div>
+        <div class="fruit">
+          <div>
+            <img class="tea-pics rounded-circle" src="images/fruity.jpg" alt="Fruit tea">
+          </div>
+          <div>
+            <p class="font tea-names">
+              Fruity Tea
+            </p>
+            <ul>
+              <li>Rose Hip</li>
+              <li>Strawberry and Vanilla</li>
+              <li>Caramel Apple</li>
+            </ul>
+          </div>
+        </div>
+        <div class="herbal">
+          <div>
+            <img class="tea-pics rounded-circle" src="images/herbal.jpg" alt="Herbal tea">
+          </div>
+          <div>
+            <p class="font tea-names">
+              Herbal Tea
+            </p>
+            <ul>
+              <li>Chamomile</li>
+              <li>Mint</li>
+              <li>Hibiscus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="order">
+      <div class="inside-order">
+        <p class="font title-size order-title">
+          Place Order
+          <p class="order-title">Select the tea, flavor and message You want</p>
+        </p>
+        <div class="flex-container-order">
+          <div id="selects-div">
+            
+          </div>
+          <div>
+            <img id="order-img" class="order-img" src="images/blank_image.png" alt="A blank starter image">
+          </div>
+        </div>
+      </div>
+      <div id="order-form" class="mt-5">
+        <div>
+          <p class="font title-size order-title">
+            Additional Info
+            <p class="order-title">Input the following information so that You can order your Tea</p>
+          </p>
+        </div>
+        <form id="form-inputs" class="margining-form mt-5">
+          <div id="validateError" class="text-center">
+
+          </div>
+          <div class="form-group mb-3 mt-4">
+            <label>First Name</label>
+            <input type="text" name="first name" id="firstName" class="form-control" aria-label="Insert First Name" placeholder="Insert First Name">
+            <label id="validationError-firstName" class="error"></label>
+          </div>
+          <div class="form-group mb-3 mt-4">
+            <label>Last Name</label>
+            <input type="text" name="last name" id="lastName" class="form-control" aria-label="Insert Last Name" placeholder="Insert Last Name">
+            <label id="validationError-lastName" class="error"></label>
+          </div>
+          <div class="form-group mb-3 mt-4">
+            <label>Phone Number</label>
+            <input type="number" name="number" id="number" class="form-control" aria-label="Insert Phone Number" placeholder="Insert Phone Number">
+            <label id="validationError-number" class="error"></label>
+          </div>
+          <div id="local-storage-output" class="form-group">
+            <label>Your Order:</label>
+            <textarea class="form-control" aria-label="With textarea" disabled></textarea>
+          </div>
+          <button id="order-btn" class="btn-dark mt-5 btn-lg" type="button">Order</button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <div class="font title-size map-title mt-5">
+        Where are we located?
+      </div>
+      <div id="map" class="mt-4">
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">Thank You for ordering</p>
+            <p id="user-name" class="text-center"></p>
+            <p class="text-center">Your order will be shipped soon</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3">
+        © 2021 Pjeter Zimaj
+      </div>
+      <div class="text-center">
+        <a href="#">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js" type="module"></script>
+    <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABn_ps3QNYXahlHe6EX3bQEpNkUspIUX0&callback=initMap">
+    </script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

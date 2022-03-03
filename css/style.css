@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+
+header{
+    width: 100%;
+}
+
+.font{
+    font-family: 'Cherry Swash', cursive;
+}
+
+.font-color{
+    color: #894d45;
+}
+
+.hero_title{
+    font-family: 'Cherry Swash', cursive;
+    font-size: 450%;
+    padding-top: 15%;
+    color: white;
+    text-shadow: 4px 3px 0px #894d45, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+.quote{
+    color: white;
+    font-size: 150%;
+    font-style: italic;
+}
+
+#hero{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/yellow_tea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+}
+
+nav .navbar-nav li a:hover{
+    color: #dbcd7a !important;
+}
+
+.bg-dark{
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.bg-transparent{
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#home{
+    margin-top: 5%;
+    height: 100vh;
+    background-color: #f5f4e9;
+}
+
+.flex-container-home{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-top: 7%;
+}
+
+.home-text{
+    flex: 50%;
+    text-align: justify;
+    padding-right: 3%;
+}
+
+.home-image-div{
+    flex: 50%;
+}
+
+.home-image{
+    border-radius: 7%;
+    transition: ease-in-out 0.5s;
+}
+
+.home-image:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.title-size{
+    font-size: 210%;
+}
+
+#quote{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/tea_farm.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+    margin-top: 5%;
+}
+
+.quote-text{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-style: italic;
+    color: white;
+    font-size: 150%;
+    padding-top: 12%;
+}
+
+#catalog{
+    margin-top: 5%;
+}
+
+.flex-container-catalog{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-left: 10%;
+}
+
+.catalog-title, .order-title, .map-title{
+    padding-left: 15%;
+}
+
+.green, .fruit{
+    padding-right: 3%;
+}
+
+.tea-names{
+    font-size: 130%;
+}
+
+.inside-order{
+    padding-top: 7%;
+}
+
+.flex-container-order{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+}
+
+.order-img{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.form-title{
+    background-color: #f5f4e9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#order{
+    margin-top: 5%;
+    height: 250vh;
+    background-color: #f5f4e9;
+}
+
+.margining-form{
+    padding-left: 13%;
+    padding-right: 13%
+}
+
+#button-location{
+    margin-top: -18%;
+}
+
+.error{
+    color: red;
+}
+
+#map{
+    height: 60vh;
+    width: 100%;
+}
+
+#validateError{
+    background-color: rgb(223, 120, 120);
+    color: white;
+}
+
+.locationButton{
+    background-color: #f5f4e9;
+    height: 10%;
+    border-radius: 20px;
+}
+
+@media(max-width: 1300px){
+    .tea-pics{
+        height: 70%;
+        width: 70%;
+    }
+
+    .order-img{
+        padding-left: 15%;
+    }
+}
+
+@media(max-width: 800px){
+    .flex-container-home{
+      flex-direction: column;
+    }
+
+    .home-text{
+        padding-right: 10%;
+    }
+
+    .home-image{
+       width: 234px;
+       height: 401px;
+    }
+
+    #home{
+        height: 200vh;
+    }
+
+    .flex-container-catalog{
+        flex-direction: column;
+    }
+
+    .flex-container-order{
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .order-img{
+        padding-top: 7%;
+        padding-left: 0%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .btn{
+        margin-top: 10%;
+    }
+
+    .flex-container-form{
+        flex-direction: column;
+        padding-left: 0%;
+    }
+
+    #button-location{
+        margin-top: 0%;
+    }
+}
